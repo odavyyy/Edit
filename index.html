@@ -57,28 +57,18 @@
       <span class="badge-bonus">BÔNUS MUITO ESPECIAL</span>
       <h1>Aula GRATUITA para você aprender esse estilo de edit</h1>
       <p>
-        Domine velocity e sync para transformam qualquer série/filme em uma edit profissional. 
+        Domine cortes, velocity, sync e efeitos que transformam qualquer highlight em um edit profissional. 
         <strong>Totalmente grátis.</strong>
       </p>
       <button id="bonusBtn" class="cta-btn bonus-cta">Quero a aula grátis agora</button>
     </div>
-    <div class="bonus-preview" id="bonus-video-player">
-      <video class="preview-video" muted loop playsinline>
+    <div class="bonus-preview">
+      <video class="preview-video" autoplay muted loop playsinline>
         <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
       </video>
       <div class="price-badge">GRÁTIS</div>
-      
-      <div class="player-controls">
-        <button class="control-btn play-pause-btn"><i class="fas fa-play"></i></button>
-        <input type="range" class="progress-bar" value="0" step="0.1">
-        <div class="time-display">00:00</div>
-        <div class="volume-container">
-            <button class="control-btn mute-btn"><i class="fas fa-volume-high"></i></button>
-            <input type="range" class="volume-slider" min="0" max="1" step="0.05" value="1">
-        </div>
-      </div>
     </div>
-    </div>
+  </div>
 </section>
 
 <section id="cursos" class="container">
@@ -394,20 +384,30 @@
                     </a>
                 </div>
             </div>
-        
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Receba dicas gratuitas de edição!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
         
         <div class="footer-bottom">
             <p>&copy; 2025 oDavyy. Todos os direitos reservados.</p>
         </div>
     </div>
 </footer>
+
 <div id="popup">
   <div id="popup-content">
     <h2>Ganhe uma aula gratuita!</h2>
     <p>Clique no botão abaixo e garanta sua aula 100% gratuita agora!</p>
-<a href="#bonus" class="btn-redirecionar" onclick="fecharPopup()">Garantir Agora!</a>
+    <a href="https://odavyy.space" target="_blank" class="btn-redirecionar">Garantir Agora!</a>
     <br>
-    <button class="close-btn" onclick="fecharPopup()">Fechar</button>
+    <button id="closePopupBtn" class="close-btn">Fechar</button>
   </div>
 </div>
 
