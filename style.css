@@ -701,3 +701,118 @@ footer p {
     height: 220px;
   }
 }
+
+/* ==================================== */
+/* Estilo do Player de Vídeo Bônus      */
+/* ==================================== */
+.player-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#bonus-video-player:hover .player-controls {
+    opacity: 1;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: var(--cor-texto-principal);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.control-btn:hover {
+    color: var(--cor-destaque);
+    transform: scale(1.1);
+}
+
+.progress-bar, .volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 5px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+.volume-slider {
+    width: 80px;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+/* Estilo do preenchimento da barra */
+.progress-bar::-webkit-slider-runnable-track,
+.volume-slider::-webkit-slider-runnable-track {
+    height: 100%;
+    border-radius: 5px;
+}
+.progress-bar::-moz-range-track,
+.volume-slider::-moz-range-track {
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Estilo da bolinha (thumb) */
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--cor-destaque);
+    margin-top: -5px; /* Centraliza a bolinha */
+}
+.progress-bar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--cor-destaque);
+    border: none;
+}
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--cor-destaque);
+    margin-top: -4px;
+}
+.volume-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--cor-destaque);
+    border: none;
+}
+
+.time-display {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--cor-texto-principal);
+    min-width: 45px;
+    text-align: center;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
