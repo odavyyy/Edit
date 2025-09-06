@@ -41,7 +41,7 @@
 
 <section id="hero" class="hero">
     <video autoplay muted loop playsinline class="background-video">
-        <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
+        <source src="https://fulanorx.shop/banner.mp4" type="video/mp4">
         Seu navegador não suporta vídeos.
     </video>
     <div class="hero-content">
@@ -57,18 +57,28 @@
       <span class="badge-bonus">BÔNUS MUITO ESPECIAL</span>
       <h1>Aula GRATUITA para você aprender esse estilo de edit</h1>
       <p>
-        Domine cortes, velocity, sync e efeitos que transformam qualquer highlight em um edit profissional. 
+        Domine velocity e sync para transformam qualquer série/filme em uma edit profissional. 
         <strong>Totalmente grátis.</strong>
       </p>
       <button id="bonusBtn" class="cta-btn bonus-cta">Quero a aula grátis agora</button>
     </div>
-    <div class="bonus-preview">
-      <video class="preview-video" autoplay muted loop playsinline>
-        <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
+    <div class="bonus-preview" id="bonus-video-player">
+      <video class="preview-video" muted loop playsinline>
+        <source src="https://fulanorx.shop/dexter.mp4" type="video/mp4">
       </video>
       <div class="price-badge">GRÁTIS</div>
+      
+      <div class="player-controls">
+        <button class="control-btn play-pause-btn"><i class="fas fa-play"></i></button>
+        <input type="range" class="progress-bar" value="0" step="0.1">
+        <div class="time-display">00:00</div>
+        <div class="volume-container">
+            <button class="control-btn mute-btn"><i class="fas fa-volume-high"></i></button>
+            <input type="range" class="volume-slider" min="0" max="1" step="0.05" value="1">
+        </div>
+      </div>
     </div>
-  </div>
+    </div>
 </section>
 
 <section id="cursos" class="container">
@@ -80,7 +90,7 @@
             <div class="curso-badge"><strong> Para Iniciantes </strong></div>
             <BR>
             <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
+                <source src="https://fulanorx.shop/iniciante.mp4" type="video/mp4">
             </video>
             
             <h3>Aula Iniciante</h3>
@@ -97,7 +107,7 @@
             <div class="curso-badge"><strong> Mais Popular </strong></div>
             <br>
             <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
+                <source src="https://fulanorx.shop/intermediario.mp4" type="video/mp4">
             </video>
             <h3>Aula Intermediária</h3>
             <p>O que vou aprender nessa aula? Velocity, zoom na arma, efeitos sonoros e como modificá-los, tudo no meu estilo intermediário pra elevar a qualidade dos seus vídeos. Te espero nessa aula pra partir pro avançado e aprender de VERDADE!</p>
@@ -112,7 +122,7 @@
             <br>
             <br>
             <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
+                <source src="https://fulanorx.shop/avancado.mp4" type="video/mp4">
             </video>
             <h3>Aula Avançada</h3>
             <p>Plugins essenciais, presets de efeitos e uma biblioteca de áudios: Aprenda a sincronizar tudo com a música, fazer transições com máscara, glitch, glow, velocity e muito mais, tudo pra elevar ainda mais o seu nível de edição.</p>
@@ -134,9 +144,8 @@
     <h2>Packs p/ Edições:</h2>
     <div class="cursos-grid">
         <div class="curso-card">
-            <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
-            </video>
+<img class="video-destaque" src="https://fulanorx.shop/qualit.png" alt="Preset Qualit">
+
             
             <h3>Preset Qualit</h3>
             <p>Eleve a qualidade dos seus vídeos em um clique! Com o Preset Qualit, suas edições ganham cores mais vivas, efeitos mais impactantes e um acabamento profissional, pronto pra renderizar no máximo da qualidade sem perder desempenho. Ideal pra quem quer dar aquele upgrade instantâneo nos vídeos.</p>
@@ -152,7 +161,7 @@
 
         <div class="curso-card">
             <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
+                <source src="https://fulanorx.shop/qualitrender.mp4" type="video/mp4">
             </video>
             <h3>Preset Qualit +  Render Settings </h3>
             <p>O combo perfeito pra extrair o máximo das suas edições: presets prontos pra dar mais impacto visual e configurações de render otimizadas pra garantir qualidade máxima e o menor peso possível nos seus vídeos.</p>
@@ -168,7 +177,7 @@
         </div>
         <div class="curso-card">
             <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
+                <source src="https://fulanorx.shop/dexter.mp4" type="video/mp4">
             </video>
             <h3>Método 120 FPS</h3>
             <p>Aprenda a burlar o TikTok e postar seus vídeos em 120FPS sem compressão. Nesse método, eu te mostro o passo a passo completo para driblar as limitações da plataforma e finalmente conseguir publicar seus vídeos com a mesma nitidez e suavidade que você vê no seu PC. Chega de compressão estragando suas criações.</p>
@@ -191,9 +200,7 @@
     <h2>Pacotes Especiais:</h2>
     <div class="cursos-grid">
         <div class="curso-card">
-            <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
-            </video>
+<img class="video-destaque" src="https://fulanorx.shop/vegas.png" alt="Preset Qualit">
             <h3>Pacote de Edição</h3>
             <p>Seu arsenal de editor: +150 presets, efeitos sonoros de impacto, Vegas Pro otimizado e plugins premium. Acompanha tutoriais de instalação para você usar tudo sem dor de cabeça.</p>
             <div class="preco-container">
@@ -205,9 +212,7 @@
         </div>
         
         <div class="curso-card">
-            <video class="video-destaque" autoplay muted loop playsinline>
-                <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
-            </video>
+<img class="video-destaque" src="https://fulanorx.shop/vegas2.png" alt="Preset Qualit">
             <h3>Combo PRO</h3>
             <p>O melhor dos dois mundos: A Aula Intermediária + o Pacote de Edição completo com um desconto exclusivo. O arsenal definitivo para quem leva a edição a sério.</p>
             <br>
@@ -222,9 +227,10 @@
 </section>
 
 <section id="beneficios" class="container">
-    <video autoplay muted loop playsinline class="background-video">
-        <source src="https://fulanorx.shop/FINAL.mp4" type="video/mp4">
-    </video>
+<video autoplay muted loop playsinline class="background-video" preload="auto">
+    <source src="https://fulanorx.shop/banner.mp4" type="video/mp4">
+</video>
+
     <br>
     <br>
     <br>
@@ -384,30 +390,20 @@
                     </a>
                 </div>
             </div>
-            
-            <div class="footer-section">
-                <h3>Newsletter</h3>
-                <p>Receba dicas gratuitas de edição!</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Seu melhor e-mail" required>
-                    <button type="submit">Inscrever</button>
-                </form>
-            </div>
-        </div>
+        
         
         <div class="footer-bottom">
             <p>&copy; 2025 oDavyy. Todos os direitos reservados.</p>
         </div>
     </div>
 </footer>
-
 <div id="popup">
   <div id="popup-content">
     <h2>Ganhe uma aula gratuita!</h2>
     <p>Clique no botão abaixo e garanta sua aula 100% gratuita agora!</p>
-    <a href="https://odavyy.space" target="_blank" class="btn-redirecionar">Garantir Agora!</a>
+<a href="#bonus" class="btn-redirecionar" onclick="fecharPopup()">Garantir Agora!</a>
     <br>
-    <button id="closePopupBtn" class="close-btn">Fechar</button>
+    <button class="close-btn" onclick="fecharPopup()">Fechar</button>
   </div>
 </div>
 
